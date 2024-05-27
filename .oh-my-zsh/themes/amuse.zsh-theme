@@ -16,9 +16,17 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
 ZSH_THEME_RUBY_PROMPT_PREFIX="%{$fg_bold[red]%}‹"
 ZSH_THEME_RUBY_PROMPT_SUFFIX="›%{$reset_color%}"
 
+PYVENV_SUFFIX="${PYVENV_SUFFIX} "
+
+if [[ ${USER} == "root" ]]; then
+  USER_COLOR=red
+else
+  USER_COLOR=green
+fi
+
 PROMPT='
-╭╴%{$fg_bold[green]%}%n@%m: %~%{$reset_color%}$(git_prompt_info)$(virtualenv_prompt_info) %{$fg[magenta]%}$(pyvenv_prompt_info)%{$reset_color%}
-╰╴$ '
+╭╴%{$fg_bold[$USER_COLOR]%}%n@%m: %~%{$reset_color%}$(git_prompt_info) 
+╰╴%{$fg[magenta]%}$(pyvenv_prompt_info)%{$reset_color%}$ '
 
 RPROMPT='$(ruby_prompt_info)'
 
@@ -27,4 +35,3 @@ ZSH_THEME_VIRTUAL_ENV_PROMPT_PREFIX=" %{$fg[green]%}"
 ZSH_THEME_VIRTUAL_ENV_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_VIRTUALENV_PREFIX=$ZSH_THEME_VIRTUAL_ENV_PROMPT_PREFIX
 ZSH_THEME_VIRTUALENV_SUFFIX=$ZSH_THEME_VIRTUAL_ENV_PROMPT_SUFFIX
-
