@@ -1,0 +1,67 @@
+{
+    "git.openRepositoryInParentFolders": "never",
+    "redhat.telemetry.enabled": false,
+    "terminal.external.linuxExec": "xterm-256color",
+    "terminal.integrated.automationProfile.linux": {},
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.fontSize": 12,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "files.associations": {
+        "*.json5": "javascript"
+    },
+    "mesonbuild.downloadLanguageServer": true,
+    "cmake.options.statusBarVisibility": "compact",
+    "explorer.confirmDelete": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "telemetry.telemetryLevel": "off",
+    "workbench.activityBar.location": "top",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.tree.indent": 15,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.editor.titleScrollbarSizing": "large",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "zenMode.restore": false,
+    "window.autoDetectHighContrast": false,
+    "window.density.editorTabHeight": "compact",
+    "window.dialogStyle": "custom",
+    "window.menuBarVisibility": "toggle",
+    "window.enableMenuBarMnemonics": false,
+    "window.titleBarStyle": "custom",
+    "window.titleSeparator": " | ",
+    "window.zoomPerWindow": false,
+    "editor.fontSize": 11,
+    "debug.console.fontSize": 11,
+    "chat.editor.fontSize": 11,
+    "markdown.preview.fontSize": 11,
+    "editor.minimap.autohide": true,
+    "editor.inlineSuggest.fontFamily": "",
+    "editor.fontFamily": "Cascadia Code PL",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "normal"
+}
