@@ -25,8 +25,8 @@ else
 fi
 
 PROMPT='
-╭╴%{$fg_bold[$USER_COLOR]%}%n@%m: %~%{$reset_color%}$(git_prompt_info) 
-╰╴%{$fg[magenta]%}$(pyvenv_prompt_info)%{$reset_color%}$ '
+╭╴%{$fg_bold[$USER_COLOR]%}%n@%m: %~%{$reset_color%}$(git_prompt_info)
+╰╴[%(?.%{$fg_bold[green]%}%?%{$reset_color%}.%{$fg[red]%}%?%{$reset_color%})] %{$fg[magenta]%}$(pyvenv_prompt_info)%{$reset_color%}$ '
 
 RPROMPT='$(ruby_prompt_info)'
 
