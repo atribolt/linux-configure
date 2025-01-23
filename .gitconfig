@@ -1,0 +1,6 @@
+[core]
+	editor = /usr/bin/vim
+	pager = cat
+	hooksPath = ~/.config/git/hooks
+[commit]
+	template = ~/.config/git/commit.template

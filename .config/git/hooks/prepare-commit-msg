@@ -1,0 +1,16 @@
+#!/bin/bash
+
+COMMIT_MSG_FILE=$1
+BRANCH=$(git branch --show-current)
+REVISION=$(git rev-list --count HEAD)
+REVISION=$(($REVISION + 1))
+
+ORIGIN_URL=$(git remove get-url origin 2>/dev/null)
+REPOSITORY=$(echo ${ORIGIN_URL:-"<no origin>"} | sed -r 's|^.+@.+:(.+).git$|\1|')
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+sed -ir "s|VAR_REPOSITORY|${REPOSITORY}|" "${COMMIT_MSG_FILE}"
+sed -ir "s|VAR_REVISION|${REVISION}|" "${COMMIT_MSG_FILE}"
+sed -ir "s|VAR_BRANCH|${BRANCH}|" "${COMMIT_MSG_FILE}"
+
