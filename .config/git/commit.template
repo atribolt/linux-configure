@@ -1,10 +1,7 @@
-# Insert the ticket
-
-# Describe changes
 
 
 # Uncomment next lines if needed
 # If you see 'VAR_...', copy the '.githooks/prepare-commit-msg' to '.git/hooks/'
-# Repository: VAR_REPOSITORY
-# Revision  : VAR_REVISION
-# Branch    : VAR_BRANCH
+# repository: VAR_REPOSITORY
+# revision  : VAR_REVISION
+# branch    : VAR_BRANCH
