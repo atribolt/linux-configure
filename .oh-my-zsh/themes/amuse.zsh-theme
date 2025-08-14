@@ -17,6 +17,7 @@ ZSH_THEME_RUBY_PROMPT_PREFIX="%{$fg_bold[red]%}‹"
 ZSH_THEME_RUBY_PROMPT_SUFFIX="›%{$reset_color%}"
 
 PYVENV_SUFFIX="${PYVENV_SUFFIX} "
+VULKAN_SDK_SUFFIX="${VULKAN_SDK_SUFFIX} "
 
 if [[ ${USER} == "root" ]]; then
   USER_COLOR=red
@@ -26,7 +27,7 @@ fi
 
 PROMPT='
 ╭╴%{$fg_bold[$USER_COLOR]%}%n@%m: %~%{$reset_color%}$(git_prompt_info)
-╰╴[%(?.%{$fg_bold[green]%}%?%{$reset_color%}.%{$fg[red]%}%?%{$reset_color%})] %{$fg[magenta]%}$(pyvenv_prompt_info)%{$reset_color%}$ '
+╰╴[%(?.%{$fg_bold[green]%}%?%{$reset_color%}.%{$fg[red]%}%?%{$reset_color%})] %{$fg[magenta]%}$(pyvenv_prompt_info)$(vulkan_sdk_prompt_info)%{$reset_color%}$ '
 
 RPROMPT='$(ruby_prompt_info)'
 
